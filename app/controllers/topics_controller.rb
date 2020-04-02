@@ -1,6 +1,7 @@
 class TopicsController < ApplicationController
   def index
     @topics = Topic.all.includes(:favorite_users)
+    @favorites_count = current_user.favorite_topics.count
   end
   
   def new
