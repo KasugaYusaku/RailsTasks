@@ -1,7 +1,9 @@
 class TopicsController < ApplicationController
   def index
-    @topics = Topic.all.includes(:favorite_users)
+    @topics = Topic.all.includes(:favorite_users)#.allで投稿一覧表示
     @favorites_count = current_user.favorite_topics.count
+    @topics = Topic.all.order(created_at: :desc)#投稿を新しい順に上から表示
+    #created_atは作成日時、descは降順
   end
   
   def new

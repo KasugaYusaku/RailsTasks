@@ -1,9 +1,9 @@
 class Topic < ApplicationRecord
-  validates :user_id, presence: true
+  validates :user_id, presence: true#ヴァリデーション設定
   validates :description, presence: true
   validates :image, presence: true
   
-  belongs_to :user
+  belongs_to :user#関連付け、Topicは一つのUserを持つ
   
   mount_uploader :image, ImageUploader
   

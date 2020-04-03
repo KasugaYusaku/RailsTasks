@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
-  def index
-   
+  def index #pages/indexを描写
+            #このメソッドをアクションという。
   end
   
-  def help
+  def help #pages/helpを描写
   end
 end
 

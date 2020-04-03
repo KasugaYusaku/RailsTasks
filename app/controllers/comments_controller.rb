@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new
     @topic = Topic.find_by(params[:topic_id])
     
+    
   end
   
   def create

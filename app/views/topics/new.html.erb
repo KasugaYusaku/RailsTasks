@@ -14,7 +14,7 @@
              <%= f.text_area :description, class: "form-control" %>
            </div>
            
-           <% if logged_in? %>
+           <% if logged_in? %> #ログインしてない時は投稿ボタンを表示しない
            <%= f.submit "投稿", class: "btn btn-black btn-block" %>
            <% end %>
         <% end %>
