@@ -19,5 +19,4 @@ Rails.application.routes.draw do
   get 'favorites/index'#いいねした投稿一覧favorites/index.html
   post '/favorites', to: 'favorites#create'
   delete '/favorites', to: 'favorites#destroy'
-  
 end

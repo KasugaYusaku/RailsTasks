@@ -19,7 +19,7 @@
               
              <% end %>
             <% end %>
-            <%= @favorites_count %>
+            <%= topic.favorites.count %>
             <%= link_to comments_new_path(topic_id: topic.id) do %>
             <%= image_tag "icons/comment.png", class: "topic-index-icon" %>
             <% end %>
